@@ -9,13 +9,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var Pessoa = (function () {
+    function Pessoa() {
+    }
+    return Pessoa;
+}());
+exports.Pessoa = Pessoa;
 var AppComponent = (function () {
     function AppComponent() {
+        this.title = 'Teste';
+        this.pessoa = {
+            nome: 'Bruno'
+        };
     }
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: '<h1>My First Angular App</h1>'
+            templateUrl: 'app/teste.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
